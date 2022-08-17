@@ -1,0 +1,52 @@
+/*Single Comment*/
+/* Block
+    Comment
+            */
+
+
+/*Embedded Styling*/
+body{
+    background-color: #f5f5f5;
+    color: #40407a;
+    font-family: Verdana,Arial,sans-serif;
+
+}
+header{
+    background-color: #80CBC4;
+    text-align: center;
+}
+h1{
+    line-height: 200%;
+}
+h2{
+    line-height: 200%;
+}
+nav{
+    text-align: center;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none; /*remove the hyperlink line*/
+}
+footer{
+    background-color: #80CBC4;
+    font-size: .60em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+/*Classes Styling*/
+.studio{
+    color: #40407A;
+    font-style: italic;
+}
+
+/*ID Styling*/
+/*Purpose of the id is to wrap the text*/
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
