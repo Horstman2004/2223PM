@@ -6,10 +6,9 @@
 
 /*Embedded Styling*/
 body{
-    background-color: #f5f5f5;
+    background-color: #3f2860;
     color: #40407a;
     font-family: Verdana,Arial,sans-serif;
-
 }
 header{
     background-image: url("images/lilyheader.jpg");
@@ -18,6 +17,10 @@ header{
     background-size: 100% 100%; /*One hundred ercent of the image*/
     height: 150px;
 }
+header a:link{text-decoration: none;display: block;color: #40407A;}
+header a:visited{text-decoration: none;display: block;color: #f5f5f5;}
+header a:hover{text-decoration: none;display: block;color: #FFF;}
+
 h1{
     line-height: 200%;
     padding-top: 50px;
@@ -30,10 +33,28 @@ nav{
     text-align: center;
     font-weight: bold;
     padding: 1em;
+    float: left;    /* it will move dynmically to the left */
+    width: 160px;
 }
 nav a{
     text-decoration: none; /*remove the hyperlink line*/
+    display: block;
+    text-align: center;
+    border: #CCCCCC;
+    border-width: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
 }
+
+nav ul{
+    list-style-type: none; /*removes bullet points*/
+    padding: 0em;
+}
+
+nav a:link{color: #3f2860;}
+nav a:visited{color: #497777}
+nav a:hover{color: #A24100; border: 3px inset #333333}
+
 footer{
     background-color: #80CBC4;
     font-size: .60em;
@@ -54,9 +75,9 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: #f5f5f5;
     min-width: 1000px;
     max-width: 1280px;
+    background-color: #FFF;
 }
 img{
     padding-left: 1em;
@@ -66,7 +87,33 @@ img{
     text-align: center;
 }
 main{
+    padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
     display: block;
+    margin-left: 170px;
 }
+
+/* Hold onto these classes*/
+.floatleft{
+    float: left;
+    margin-right: 4em;
+    margin-bottom: 1em;
+}
+.onehalf{
+    float: left;
+    width: 50%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.onethird{
+    float: left;
+    width: 33%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#clear{
+    clear: both;
+}
+/* GLobal property*/
+* {box-sizing: border-box;}
