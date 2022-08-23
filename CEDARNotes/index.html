@@ -1,0 +1,72 @@
+. = class
+# = ids
+[] = stylesheet
+link = link
+> = child
+$ = Generate Text
+
+<!-- Notes -->
+<!-- div.class-1.class-2#id-1 -->
+<div class="class-1 class-1" id="id-1"></div>
+
+<!-- .class
+Always auto divs -->
+<div class="class"></div>
+
+<!-- link -->
+<link rel="stylesheet" href="">
+
+<!-- button[type="button"] -->
+<button type="button"></button>
+
+<!-- header>h1>p>ul>li*3 -->
+<header>
+    <h1>
+        <p>
+            <ul>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/V8vizNQKtx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+    </h1>
+</header>
+
+<!-- header>nav>ul>li*3{List Iten $} -->
+<header>
+    <nav>
+        <ul>
+            <li>List Iten 1</li>
+            <li>List Iten 2</li>
+            <li>List Iten 3</li>
+        </ul>
+    </nav>
+</header>
+
+<!-- header>nav>ul>li*3.class -->
+<header>
+    <nav>
+        <ul>
+            <li class="class"></li>
+            <li class="class"></li>
+            <li class="class"></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- header>nav>ul>li*3>link -->
+<header>
+    <nav>
+        <ul>
+            <li>
+                <link rel="stylesheet" href="">
+            </li>
+            <li>
+                <link rel="stylesheet" href="">
+            </li>
+            <li>
+                <link rel="stylesheet" href="">
+            </li>
+        </ul>
+    </nav>
+</header>
