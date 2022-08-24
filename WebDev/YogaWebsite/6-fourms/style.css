@@ -1,3 +1,17 @@
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+    margin-bottom: .5em;
+}
+input,textarea{
+    margin-bottom: .5em;
+}
+form button{
+    padding: .5em;
+}
+
 table{
     width: 60%;
     border: 1px solid #3f2860;
@@ -23,8 +37,6 @@ caption{
 tr:nth-of-type(even){
     background: #dbe8e9;
 }
-
-
 
 /*Fullscreen*/
 @media(min-width:1024px){
