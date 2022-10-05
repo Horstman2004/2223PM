@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.random;
 
 public class PasswordGenerator {
     public static void main(String[] args){  
@@ -26,7 +27,7 @@ public class PasswordGenerator {
     private static Integer PasswordGenerator(Integer chars, numbers, specialChar){
         Int total = (chars+numbers+specialChar);
         for(i=0;i>chars;i++){
-
+            
         }
 
     }
