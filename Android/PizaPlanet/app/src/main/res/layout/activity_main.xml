@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/welcomeTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Pizza Planet"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/pizzaIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/justsauce"/>
+
+        <TextView
+            android:id="@+id/chooseSizeLBL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Size:"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/sizeRG"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/smallBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:text="Small" />
+
+            <RadioButton
+                android:id="@+id/mediumBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/largeBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:text="Large" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/toppingsLBL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toppings"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <CheckBox
+                android:id="@+id/anchoviesCBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Anchovies"
+                />
+
+            <CheckBox
+                android:id="@+id/baconCBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bacon" />
+
+            <CheckBox
+                android:id="@+id/jalapenosCBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jalapenos" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/completeBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Order"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/outputLBL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

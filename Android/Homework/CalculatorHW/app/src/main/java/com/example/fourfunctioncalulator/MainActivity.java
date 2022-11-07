@@ -11,8 +11,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     //set globals
-    private EditText number1Input, number2Input;
-    private Button addBTN, subBTN, multiBTN, divBTN;
+    private EditText outputTXT;
+    private Button addBTN, subBTN, multiBTN, divideBTN, equalsBTN, oneBTN, twoBTN, threeBTN, fourBTN, fiveBTN, sixBTN, sevenBTN, eightBTN, nineBTN, zeroBTN;
     private TextView output;
 
     @Override
