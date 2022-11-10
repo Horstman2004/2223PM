@@ -8,22 +8,24 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/outputTXT"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         android:text="0"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textSize="50dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
         app:columnCount="4"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:rowCount="4"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputTXT"
+        app:rowCount="4">
 
         <Button
             android:id="@+id/sevenBTN"
@@ -51,7 +53,7 @@
             app:layout_row="0" />
 
         <Button
-            android:id="@+id/plusBTN"
+            android:id="@+id/addBTN"
             android:layout_width="102dp"
             android:layout_height="102dp"
             android:layout_marginEnd="16dp"
@@ -84,6 +86,7 @@
             android:text="0"
             app:layout_column="0"
             app:layout_row="3" />
+
         <Button
             android:id="@+id/divideBTN"
             android:layout_width="102dp"
@@ -91,6 +94,7 @@
             android:text="/"
             app:layout_column="3"
             app:layout_row="3" />
+
         <Button
             android:id="@+id/equalsBTN"
             android:layout_width="102dp"
@@ -98,6 +102,7 @@
             android:text="="
             app:layout_column="2"
             app:layout_row="3" />
+
         <Button
             android:id="@+id/twoBTN"
             android:layout_width="102dp"
@@ -105,6 +110,7 @@
             android:text="2"
             app:layout_column="1"
             app:layout_row="2" />
+
         <Button
             android:id="@+id/multiBTN"
             android:layout_width="102dp"
@@ -112,6 +118,7 @@
             android:text="X"
             app:layout_column="3"
             app:layout_row="2" />
+
         <Button
             android:id="@+id/threeBTN"
             android:layout_width="102dp"
@@ -119,6 +126,7 @@
             android:text="3"
             app:layout_column="2"
             app:layout_row="2" />
+
         <Button
             android:id="@+id/fiveBTN"
             android:layout_width="102dp"
@@ -126,6 +134,7 @@
             android:text="5"
             app:layout_column="1"
             app:layout_row="1" />
+
         <Button
             android:id="@+id/sixBTN"
             android:layout_width="102dp"
@@ -133,6 +142,7 @@
             android:text="6"
             app:layout_column="2"
             app:layout_row="1" />
+
         <Button
             android:id="@+id/subBTN"
             android:layout_width="102dp"
@@ -140,6 +150,7 @@
             android:text="-"
             app:layout_column="3"
             app:layout_row="1" />
+
         <Button
             android:id="@+id/periodBTN"
             android:layout_width="102dp"

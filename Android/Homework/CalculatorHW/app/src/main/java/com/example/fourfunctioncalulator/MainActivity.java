@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     //set globals
-    private EditText outputTXT;
     private Button addBTN, subBTN, multiBTN, divideBTN, equalsBTN, oneBTN, twoBTN, threeBTN, fourBTN, fiveBTN, sixBTN, sevenBTN, eightBTN, nineBTN, zeroBTN;
-    private TextView output;
+    private TextView outputTXT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,60 +21,171 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //link java objects to widgets
-        number1Input = findViewById(R.id.number1Input);
-        number2Input = findViewById(R.id.number2Input);
+        outputTXT = findViewById(R.id.outputTXT);
+        equalsBTN = findViewById(R.id.equalsBTN);
         addBTN = findViewById(R.id.addBTN);
         subBTN = findViewById(R.id.subBTN);
         multiBTN = findViewById(R.id.multiBTN);
-        divBTN = findViewById(R.id.divBTN);
+        divideBTN = findViewById(R.id.divideBTN);
+        zeroBTN = findViewById(R.id.zeroBTN);
+        oneBTN = findViewById(R.id.oneBTN);
+        twoBTN = findViewById(R.id.twoBTN);
+        threeBTN = findViewById(R.id.threeBTN);
+        fourBTN = findViewById(R.id.fourBTN);
+        fiveBTN = findViewById(R.id.fiveBTN);
+        sixBTN = findViewById(R.id.sixBTN);
+        sevenBTN = findViewById(R.id.sevenBTN);
+        eightBTN = findViewById(R.id.eightBTN);
+        nineBTN = findViewById(R.id.nineBTN);
 
+        ArrayList<String> Listy = new ArrayList<String>();
+
+        //calculation
+        equalsBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Double num;
+                if (equalsBTN.isPressed()) {
+                    String expressions = (String) outputTXT.getText();
+                    for (int i = 0; i <= expressions.length(); i++) {
+                        String currentExp = String.valueOf(expressions.indexOf(i));
+                        if (currentExp == "1" || currentExp == "2" || currentExp == "3" || currentExp == "4") {
+
+                        }
+                    }
+                }
+            }
+        });
 
         //setOnClickListeners
         addBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int num1 = Integer.parseInt(String.valueOf(number1Input.getText()));
+                if(addBTN.isPressed()){
+                    //outputTXT.append("+");
+                    outputTXT.append("+");
 
-                int num2 = Integer.parseInt(String.valueOf(number2Input.getText()));
-                int answer = num1 + num2;
-                output.setText(String.valueOf(answer));
+                }
             }
         });
 
         subBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int num1 = Integer.parseInt(String.valueOf(number1Input.getText()));
-
-                int num2 = Integer.parseInt(String.valueOf(number2Input.getText()));
-                int answer = num1 - num2;
-                output.setText(String.valueOf(answer));
+                if(subBTN.isPressed()){
+                    outputTXT.append("-");
+                }
             }
         });
 
         multiBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int num1 = Integer.parseInt(String.valueOf(number1Input.getText()));
-
-                int num2 = Integer.parseInt(String.valueOf(number2Input.getText()));
-                int answer = num1 * num2;
-                output.setText(String.valueOf(answer));
+                if(multiBTN.isPressed()){
+                    outputTXT.append("X");
+                }
             }
         });
 
-        divBTN.setOnClickListener(new View.OnClickListener() {
+        divideBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int num1 = Integer.parseInt(String.valueOf(number1Input.getText()));
-
-                int num2 = Integer.parseInt(String.valueOf(number2Input.getText()));
-                int answer = num1 / num2;
-                output.setText(String.valueOf(answer));
+                if(divideBTN.isPressed()){
+                    outputTXT.append("/");
+                }
             }
         });
 
-    }
+        zeroBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(zeroBTN.isPressed()){
+                    outputTXT.append("0");
+                }
+            }
+        });
+
+        nineBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(nineBTN.isPressed()){
+                    outputTXT.append("9");
+                }
+            }
+        });
+
+        eightBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(eightBTN.isPressed()){
+                    outputTXT.append("8");
+                }
+            }
+        });
+
+        sevenBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(sevenBTN.isPressed()){
+                    outputTXT.append("7");
+                }
+            }
+        });
+
+        sixBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(sixBTN.isPressed()){
+                    outputTXT.append("6");
+                }
+            }
+        });
+
+        fiveBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(fiveBTN.isPressed()){
+                    outputTXT.append("5");
+                }
+            }
+        });
+
+        fourBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(fourBTN.isPressed()){
+                    outputTXT.append("4");
+                }
+            }
+        });
+
+        threeBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(threeBTN.isPressed()){
+                    outputTXT.append("3");
+                }
+            }
+        });
+
+        twoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(twoBTN.isPressed()){
+                    outputTXT.append("2");
+                }
+            }
+        });
+
+        oneBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(oneBTN.isPressed()){
+                    outputTXT.append("1");
+                }
+            }
+        });
+}
 
     //additional functions
 //    private void calc(String operator, int n1, int n2){

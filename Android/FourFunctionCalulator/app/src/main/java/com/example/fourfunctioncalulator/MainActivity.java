@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     //set globals
     private EditText number1Input, number2Input;
-    private Button addBTN, subBTN, multiBTN, divBTN;
-    private TextView output;
+    private Button addBTN, subBTN, multiBTN, divideBTN, equalsBTN, periodBTN, zeroBTN, nineBTN, eightBTN, sevenBTN, sixBTN, fiveBTN, fourBTN, threeBTN, twoBTN, oneBTN;
+    private TextView outputTXT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +21,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //link java objects to widgets
-        number1Input = findViewById(R.id.number1Input);
-        number2Input = findViewById(R.id.number2Input);
+        outputTXT = findViewById(R.id.outputTXT);
         addBTN = findViewById(R.id.addBTN);
         subBTN = findViewById(R.id.subBTN);
         multiBTN = findViewById(R.id.multiBTN);
-        divBTN = findViewById(R.id.divBTN);
+        divideBTN = findViewById(R.id.divBTN);
+        oneBTN = findViewById(R.id.oneBTN);
+        twoBTN = findViewById(R.id.twoBTN);
+        threeBTN = findViewById(R.id.threeBTN);
+        fourBTN = findViewById(R.id.fourBTN);
+        fiveBTN = findViewById(R.id.fiveBTN);
+        sixBTN = findViewById(R.id.sixBTN);
+        sevenBTN = findViewById(R.id.sevenBTN);
+        eightBTN = findViewById(R.id.eightBTN);
+        nineBTN = findViewById(R.id.nineBTN);
 
 
         //setOnClickListeners
